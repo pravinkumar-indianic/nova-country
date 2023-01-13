@@ -78,7 +78,7 @@ class ModuleExport extends Command
                  * export directory
                  * */
                 File::copyDirectory(__DIR__ . "/../../exports/{$module}/", base_path("{$path}/"));
-
+                File::copy(__DIR__ . "/../../exports/{$module}/Nova/{$module}.php/", app_path("/Nova"));
                 /*
                  * autoload directory
                  * */
