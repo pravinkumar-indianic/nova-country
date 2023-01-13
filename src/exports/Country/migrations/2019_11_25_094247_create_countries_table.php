@@ -17,7 +17,7 @@ class CreateCountriesTable extends Migration
             $table->increments('id');
             $table->string('country_code', 2);
             $table->string('name');
-            $table->integer('phone_code');
+            $table->integer('phonecode');
             $table->enum('status', ['Active', 'Inactive'])->default('Active');
             $table->string('flag')->nullable();
             $table->timestamps();
