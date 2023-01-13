@@ -47,10 +47,13 @@ class Country extends Resource
 
             Text::make('contry code', 'shortname')
                     ->sortable()
-                    ->rules('required', 'max:255'),
+                    ->rules('required', 'max:2'),
             Text::make('name')
                     ->sortable()
                     ->rules('required', 'max:255'),
+            Text::make('phonecode')
+                    ->sortable()
+                    ->rules('required', 'max:5'),
             // HasMany::make('State'),
             // HasMany::make('City'),
         ];
