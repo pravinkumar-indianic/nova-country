@@ -1,6 +1,6 @@
 <?php
 
-namespace Indianicinfotech\Country\Nova;
+namespace App\Nova;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
@@ -16,7 +16,7 @@ class Country extends Resource
      *
      * @var string
      */
-    public static $model = \App\Models\Country::class;
+    public static $model = \Indianicinfotech\Country\Models\Country::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -51,8 +51,8 @@ class Country extends Resource
             Text::make('name')
                     ->sortable()
                     ->rules('required', 'max:255'),
-            HasMany::make('State'),
-            HasMany::make('City'),
+            // HasMany::make('State'),
+            // HasMany::make('City'),
         ];
     }
 
