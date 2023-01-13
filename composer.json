@@ -1,0 +1,33 @@
+{
+    "name": "indianicinfotech/modules",
+    "description": "modules package",
+    "type": "library",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Indianicinfotech\\Modules\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Indianicinfotech\\Modules\\CountryServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "archive": {
+        "exclude": ["/src/exports"]
+    },
+    "authors": [
+        {
+            "name": "bhavik.datt",
+            "email": "bhavik.datt@indianic.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
